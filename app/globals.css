@@ -1,21 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+   
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+
+/* Add this to your global CSS file */
+
+/* Keyframes for gradient animation */
+/* Add this to your global CSS file */
+
+/* Keyframes for gradient animation */
+@keyframes gradient-animation {
+  0% { background: linear-gradient(136deg, #4484ce, #1ad7c0); }
+  20% { background: linear-gradient(136deg, #1ad7c0, #ff9b11); }
+  40% { background: linear-gradient(136deg, #ff9b11, #9b59b6); }
+  60% { background: linear-gradient(136deg, #9b59b6, #ff7f7f); }
+  80% { background: linear-gradient(136deg, #ff7f7f, #ecf0f1); }
+  100% { background: linear-gradient(136deg, #ecf0f1, #4484ce); }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Apply the animation to the target element */
+.bg-gradient-animation {
+  animation: gradient-animation 10s infinite;
+  background-size: 1200% 1200%;
 }
