@@ -1,15 +1,15 @@
 import React from 'react';
-import { Progress } from '@headlessui/react';
-import { skills } from '@/assets/assets';
-function SkillsBar() {
-    const{ skill, value, isScrolled }=skills
+
+function SkillsBar({ skill, value, isScrolled }) {
   return (
-    <div className="w-11/12">
-      <p className="text-lg mb-1 mt-2">{skill}</p>
-      <Progress
-        className={!isScrolled ? "bg-gray-300 h-2" : "bg-blue-500 h-2 transition-all duration-700"}
-        value={value}
-      />
+    <div className="w-full p-4 border border-gray-200 rounded-lg shadow-md">
+      <p className="text-lg mb-1 font-semibold text-gray-800">{skill}</p>
+      <div className="w-full bg-gray-200 rounded-full h-2.5">
+        <div
+          className={`h-2.5 rounded-full ${isScrolled ? 'bg-blue-500 transition-all duration-700' : 'bg-gray-300'}`}
+          style={{ width: `${value}%` }}
+        />
+      </div>
     </div>
   );
 }
