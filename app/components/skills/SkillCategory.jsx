@@ -1,11 +1,11 @@
 import React from 'react';
-import SkillsBar from './SkillsBar';
+import SkillProgressBar from './SkillProgressBar';
 
-function SkillsSection({ skills, isScrolled }) {
+function SkillCategory({ skills, isScrolled }) {
   return (
     <div className="space-y-4">
       {skills.map((skill, index) => (
-        <SkillsBar
+        <SkillProgressBar
           key={`${skill.name}-${index}`}
           skill={skill.name}
           value={skill.value}
@@ -16,4 +16,4 @@ function SkillsSection({ skills, isScrolled }) {
   );
 }
 
-export default SkillsSection;
+export default SkillCategory;

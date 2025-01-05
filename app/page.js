@@ -1,35 +1,45 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import AboutMe from './components/About';
-import SkillsBar from './components/skills/Skillsbar';
+import Navbar from './components/NavBar'
+import Herosection from './components/Herosection';
+import AboutAbhi from './components/About';
+
 import { skills ,experiences} from '@/assets/assets';
-import Skills from './components/skills/Skill';
-import Experience from './components/Experience';
-import Leadership from './components/Leadership';
+import SkillSection from './components/skills/SkillSection';
+import WorkHistory from './components/WorkHistory';
+import SliderShowcase from './components/SliderShowcase';
 import { leadership } from '@/assets/assets';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+
 
 const page = () => {
   return (
     <div>
       <Navbar/>
-      <div>
-      <Hero/>
-      </div>
-      <AboutMe/>
-      <Skills
-          heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
-        />
-        <Experience experiences={experiences} />
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
+     
+      <Herosection />
+      
+      <AboutAbhi/>
+    
+      <WorkHistory jobs={experiences} />
+
+      <Projects/>
+
+      <SliderShowcase
+          title={leadership.heading}
+          description={leadership.message}
+          slides={leadership.images}
           imageSize={leadership.imageSize}
         />
+   
+       
+        <SkillSection
+          sectionTitle={skills.heading}
+          technicalSkills={skills.hardSkills}
+          interpersonalSkills={skills.softSkills}
+        />
+        <Footer/>
 
     
     </div>

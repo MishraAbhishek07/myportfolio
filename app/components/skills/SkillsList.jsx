@@ -1,9 +1,8 @@
 import React from 'react';
-import SkillsSection from './SkillTab';
+import SkillCategory from './SkillCategory';
 
-
-
-function SkillsTab({ skills, isScrolled }) {
+function SkillsList({ skills, isScrolled }) {
+  
   const half = Math.ceil(skills.length / 2);
   const firstHalf = skills.slice(0, half);
   const secondHalf = skills.slice(half);
@@ -11,13 +10,13 @@ function SkillsTab({ skills, isScrolled }) {
   return (
     <div className="flex flex-wrap">
       <div className="w-full md:w-1/2 p-2">
-        <SkillsSection
+        <SkillCategory
           skills={firstHalf}
           isScrolled={isScrolled}
         />
       </div>
       <div className="w-full md:w-1/2 p-2">
-        <SkillsSection
+        <SkillCategory
           skills={secondHalf}
           isScrolled={isScrolled}
         />
@@ -26,4 +25,4 @@ function SkillsTab({ skills, isScrolled }) {
   );
 }
 
-export default SkillsTab;
+export default SkillsList;
