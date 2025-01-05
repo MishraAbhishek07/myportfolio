@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import Logo from "@/assets/hamburger-menu.svg";
 
-const NavBar = () => {
+function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const [bgColor, setBgColor] = useState('bg-transparent');
   const [darkMode, setDarkMode] = useState(false);
