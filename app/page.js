@@ -1,10 +1,7 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from 'react'
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Herosection from './components/Herosection';
 import About from './components/About';
-import NavBar from './components/NavBar';
-
 import { skills ,experiences} from '@/assets/assets';
 import SkillSection from './components/skills/SkillSection';
 import WorkHistory from './components/WorkHistory';
@@ -12,6 +9,7 @@ import SliderShowcase from './components/SliderShowcase';
 import { leadership } from '@/assets/assets';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 
 const page = () => {
