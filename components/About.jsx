@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id="aboutme" className="content-section bg-gray-200 dark:bg-gray-800 lg:px-16 py-8">
      
-      <div  className="w-[90vw] h-[90vh] flex flex-wrap gap-14 items-center lg:flex-nowrap">
+      <div  className="lg:w-[90vw] w-full h-[90vh] flex flex-wrap gap-14 items-center lg:flex-nowrap">
         {show && (
           <div className="w-full lg:w-6/12 hidden flex justify-center lg:block lg:justify-center mb-8 lg:mb-0">
             <Image
