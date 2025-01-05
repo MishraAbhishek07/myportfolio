@@ -13,7 +13,7 @@ const About = () => {
      
       <div  className="lg:w-[90vw] w-full h-[90vh] flex flex-wrap gap-14 items-center lg:flex-nowrap">
         {show && (
-          <div className="w-full lg:w-6/12 hidden flex justify-center lg:block lg:justify-center mb-8 lg:mb-0">
+          <div className={`w-full lg:w-6/12 ${show?"flex":"hidden"} justify-center lg:block lg:justify-center mb-8 lg:mb-0`}>
             <Image
               className="border border-gray-400 dark:border-gray-600 rounded-full"
               src={Logo}
