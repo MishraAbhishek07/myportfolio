@@ -1,8 +1,8 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from 'react'
-import Navbar from './components/NavBar'
+import NavBar from './components/NavBar'
 import Herosection from './components/Herosection';
-import AboutAbhi from './components/About';
+import About from './components/About';
 
 import { skills ,experiences} from '@/assets/assets';
 import SkillSection from './components/skills/SkillSection';
@@ -16,11 +16,11 @@ import Footer from './components/Footer';
 const page = () => {
   return (
     <div>
-      <Navbar/>
+      <NavBar/>
      
       <Herosection />
       
-      <AboutAbhi/>
+      <About/>
     
       <WorkHistory jobs={experiences} />
 

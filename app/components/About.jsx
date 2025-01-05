@@ -5,7 +5,7 @@ import { About } from '@/assets/assets';
 import Logo from '@/assets/profile.jpg';
 
 
-const AboutAbhi = () => {
+const About = () => {
   const { show, imgSize, heading, message, resume } = About;
 
   return (
@@ -46,4 +46,4 @@ const AboutAbhi = () => {
   );
 };
 
-export default AboutAbhi;
+export default About;
