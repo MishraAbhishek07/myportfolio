@@ -1,12 +1,12 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { About } from '@/assets/assets';
+import { About as Aboutme } from '@/assets/assets';
 import Logo from '@/assets/profile.jpg';
 
 
 const About = () => {
-  const { show, imgSize, heading, message, resume } = About;
+  const { show, imgSize, heading, message, resume } = Aboutme;
 
   return (
     <div id="aboutme" className="content-section bg-gray-200 dark:bg-gray-800 lg:px-16 py-8">

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 const WorkCard = ({ job }) => {
-  console.log(job)
+  // console.log(job)
   return (
     <div className="flex flex-col items-center justify-center  p-4">
       <div className="mb-1">

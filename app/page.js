@@ -1,8 +1,9 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from 'react'
-import NavBar from './components/NavBar'
+
 import Herosection from './components/Herosection';
 import About from './components/About';
+import NavBar from './components/NavBar';
 
 import { skills ,experiences} from '@/assets/assets';
 import SkillSection from './components/skills/SkillSection';
