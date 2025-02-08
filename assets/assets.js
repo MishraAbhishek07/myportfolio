@@ -84,20 +84,20 @@ const navBar = {
     show: true,
     heading: "Experiences",
     data: [
+      // {
+      //   role: "Next.js Intern",
+      //   companylogo: Logo,
+      //   date: "Jan 2025 ",
+      // },
+      // {
+      //   role: "Senior Software Engineer", 
+      //   companylogo: Logo1,
+      //   date: "May 2022 – March 2023",
+      // },
       {
-        role: "React Developer",
-        companylogo: Logo,
-        date: "Aug 2020 – May 2022",
-      },
-      {
-        role: "Senior Software Engineer", 
-        companylogo: Logo1,
-        date: "May 2022 – March 2023",
-      },
-      {
-        role: "React Developer",
+        role: "Next.js Intern",
         companylogo: Logo2,
-        date: "March 2023 – Present",
+        date: "Jan 2025",
       },
     ],
   };

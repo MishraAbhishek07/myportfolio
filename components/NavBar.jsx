@@ -43,7 +43,7 @@ function NavBar() {
   };
 
   return (
-    <div className={`${darkMode ? 'dark' : ''}`}>
+    <div className={`${darkMode ? 'dark' : ''} fixed top-0 w-full`}>
       <nav
         className={`w-full fixed top-0 left-0 right-0 z-50 ${
           navbar && window.innerWidth < 768 ? 'bg-gray-400' : bgColor
